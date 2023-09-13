@@ -2,29 +2,28 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/dist/output.css" rel="stylesheet">
-    <title>modelo cajas flex</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>modelo cajas grid</title>
 </head>
+
 <body>
-  <div class="mx-auto bg-orange-900 max-w-3xl container">
-      <header class="h-10 bg-[#a33f0a]">
-              encabezado
-          </header>
-      
-      <section class="flex flex-row-reverse  bg-red-400">
-          <nav class=" h-[101px] w-1/4 bg-green-500">
-              opciones de navegacion
-          </nav>
-          <article class="w-3/4 bg-purple-300">
-              aca el contenido de la seccion
-          </article>
-      </section>
-          <footer class="clear-both bg-pink-400" >
-              pie de pagina
-          </footer>
+  <div class="grid grid-cols-4 mx-auto bg-orange-900 max-w-3xl container">
+    <header class="col-span-4 h-10 bg-[#a33f0a]">
+      encabezado
+    </header>
+
+    <nav class=" h-[101px] bg-green-500">
+      opciones de navegacion
+    </nav>
+    <article class="col-span-3 bg-purple-300">
+      aca el contenido de la seccion
+    </article>
+    <footer class="col-span-4 bg-pink-400">
+      pie de pagina
+    </footer>
   </div>
 </body>
 
